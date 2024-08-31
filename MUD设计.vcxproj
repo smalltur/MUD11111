@@ -127,17 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\OOUCer\MUD\plot.cpp" />
-    <ClCompile Include="..\OOUCer\MUD\shoptest.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="map1.cpp" />
+    <ClCompile Include="plot.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\OOUCer\MUD\battleSystem.h" />
     <ClInclude Include="..\OOUCer\MUD\character.h" />
     <ClInclude Include="..\OOUCer\MUD\equipment.h" />
-    <ClInclude Include="..\OOUCer\MUD\map.h" />
     <ClInclude Include="..\OOUCer\MUD\plot.h" />
     <ClInclude Include="..\OOUCer\MUD\shop.h" />
+    <ClInclude Include="map11.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

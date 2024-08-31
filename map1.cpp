@@ -1,21 +1,19 @@
-
 #include <iostream>
 #include"Windows.h"
-#include "map.h"
+#include"map11.h"
 
 using namespace std;
-void Map::showmap(int placeflag)//ä¼ å…¥åœ°å€æ ‡å¿—intå‹ï¼Œäººç‰©åœ¨å“ªï¼Œå“ªä¸ªåœ°ç‚¹å°±æ˜¾ç¤ºä¸ºçº¢è‰²ã€‚
+void Map::showmap(int placeflag)//´«ÈëµØÖ·±êÖ¾intĞÍ£¬ÈËÎïÔÚÄÄ£¬ÄÄ¸öµØµã¾ÍÏÔÊ¾ÎªºìÉ«¡£
 {
     cout << "             ";
     if (placeflag == 1)
     {
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
-        cout << "1.èŒ¶é…’åº—" << endl;
+        cout << "1.²è¾Æµê" << endl;
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
     }
     else
-        cout << "1.èŒ¶é…’åº—" << endl;
-
+        cout << "1.²è¾Æµê" << endl;
     cout << "               |" << endl;
     cout << "               |" << endl;
     cout << "               |" << endl;
@@ -23,45 +21,45 @@ void Map::showmap(int placeflag)//ä¼ å…¥åœ°å€æ ‡å¿—intå‹ï¼Œäººç‰©åœ¨å“ªï¼Œå“ªä
     if (placeflag == 2)
     {
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
-        cout << "2.æ­¦é¦†";
+        cout << "2.Îä¹İ";
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
     }
     else
-        cout << "2.æ­¦é¦†";
+        cout << "2.Îä¹İ";
 
     cout << "-------";
 
     if (placeflag == 3)
     {
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
-        cout << "3.ç‰¢æˆ¿";
+        cout << "3.ÀÎ·¿";
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
     }
     else
-        cout << "3.è¥æˆ¿";
+        cout << "3.Óª·¿";
 
     cout << "----------";
 
     if (placeflag == 4)
     {
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
-        cout << "4.è‰æ–™åœº";
+        cout << "4.²İÁÏ³¡";
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
     }
     else
-        cout << "4.è‰æ–™åœº";
+        cout << "4.²İÁÏ³¡";
 
     cout << "------------";
 
     if (placeflag == 5)
     {
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
-        cout << "5.å¸‚äº•" << endl;
+        cout << "5.ÊĞ¾®" << endl;
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
     }
     else
     {
-        cout << "5.å¸‚äº•" << endl;
+        cout << "5.ÊĞ¾®" << endl;
     }
 
     cout << "               |                       \\" << endl;
@@ -72,12 +70,12 @@ void Map::showmap(int placeflag)//ä¼ å…¥åœ°å€æ ‡å¿—intå‹ï¼Œäººç‰©åœ¨å“ªï¼Œå“ªä
     if (placeflag == 6)
     {
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
-        cout << "6.ç å¤´";
+        cout << "6.ÂëÍ·";
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
     }
     else
     {
-        cout << "6.ç å¤´";
+        cout << "6.ÂëÍ·";
     }
 
     cout << "                       ";
@@ -85,40 +83,39 @@ void Map::showmap(int placeflag)//ä¼ å…¥åœ°å€æ ‡å¿—intå‹ï¼Œäººç‰©åœ¨å“ªï¼Œå“ªä
     if (placeflag == 7)
     {
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
-        cout << "7.å¤åº™" << endl;
+        cout << "7.¹ÅÃí" << endl;
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
     }
     else
-        cout << "7.å¤åº™" << endl;
-    return ;
+        cout << "7.¹ÅÃí" << endl;
+    return;
 }
-void Map::move(int placeflag)//ä¼ å…¥åœ°å€æ ‡è¯†ï¼ˆå…¶å®åº”è¯¥æ”¾äººç‰©é‡Œé¢ï¼‰
+void Map::move(int placeflag)//´«ÈëµØÖ·±êÊ¶£¨ÆäÊµÓ¦¸Ã·ÅÈËÎïÀïÃæ£©
 {
 
-    cout << "ä½ æ¥åˆ°äº†";
+    cout << "ÄãÀ´µ½ÁË";
     switch (placeflag)
     {
     case 1:
-        cout << "èŒ¶é…’åº—";
+        cout << "²è¾Æµê";
         break;
     case 2:
-        cout << "æ­¦é¦†";
-        break;   
+        cout << "Îä¹İ";
+        break;
     case 3:
-        cout << "è¥æˆ¿";
+        cout << "Óª·¿";
         break;
     case 4:
-        cout << "è‰æ–™åœº";
+        cout << "²İÁÏ³¡";
         break;
     case 5:
-        cout << "èŒ¶é…’åº—";
+        cout << "²è¾Æµê";
         break;
     case 6:
-        cout << "å¸‚äº•";
+        cout << "ÊĞ¾®";
         break;
     case 7:
-        cout << "å¤åº™";
+        cout << "¹ÅÃí";
         break;
     }
 }
-

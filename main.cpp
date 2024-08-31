@@ -5,16 +5,15 @@
 #include"battleSystem.h"
 #include"character.h"
 #include"equipment.h"
-#include"map.h"
+#include"map11.h"
 #include"plot.h"
 #include"shop.h"
 int main()
 {
     Map map;
-    Battle battle;
     Linchong lc("林冲",100,100,100,100,100,1,1,100,1,1);
     Equipment equip();
-    map.showmap(lc.getPlace());
+    map.showmap(1);
 
 }
 

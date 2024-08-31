@@ -153,7 +153,7 @@ public:
 			return true;
 		}
 		else {
-            cout << "钱不够!你需要" << equipment->getPrice() << "块钱，但是你只有" << gold << "块钱。" << endl;
+            cout << "钱不够！你需要 " << equipment->getPrice() <<gold << " 块钱" << endl;
 			return false;
 		}
 	}
@@ -166,7 +166,7 @@ public:
 			return true;
 		}
 		else {
-			cout << "钱不够！你需要" << equipment->getPrice() << "块钱，但是你只有" << gold << "块钱." << endl;
+            cout << "钱不够！你需要 " << equipment->getPrice() << gold << " 块钱" << endl;
 			return false;
 		}
 	}

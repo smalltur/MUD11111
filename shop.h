@@ -29,7 +29,7 @@ public:
 	// 尝试从商店购买物品  
 	bool buyItem(Linchong& character, size_t index) {
 		if (index >= inventory.size()) {
-			cout << "输入有误！" << endl;
+			cout << "输入有误" << endl;
 			return false;
 		}
 
@@ -65,7 +65,7 @@ public:
 	// 尝试从商店购买物品  
 	bool buyItem(Linchong& character, size_t index) {
 		if (index >= inventory.size()) {
-			cout << "输入有误！" << endl;
+			cout << "输入有误" << endl;
 			return false;
 		}
 

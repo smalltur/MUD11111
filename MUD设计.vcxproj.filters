@@ -18,10 +18,10 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\OOUCer\MUD\plot.cpp">
+    <ClCompile Include="plot.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\OOUCer\MUD\shoptest.cpp">
+    <ClCompile Include="map1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,13 +35,13 @@
     <ClInclude Include="..\OOUCer\MUD\equipment.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\OOUCer\MUD\map.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="..\OOUCer\MUD\plot.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\OOUCer\MUD\shop.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="map11.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
